@@ -1,5 +1,5 @@
 
-import { Facebook, Instagram, Youtube, Mail } from "lucide-react";
+import { Facebook, Mail } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -9,34 +9,26 @@ const Footer = () => {
           <div>
             <h3 className="font-heading font-bold text-xl mb-4">Nibrių žirgynėlis</h3>
             <p className="text-gray-300 mb-4">
-              Connect with nature and animals in our family-friendly countryside escape.
+              Susisiekite su gamta ir gyvūnais mūsų šeimai draugiškoje kaimo aplinkoje.
             </p>
             <div className="flex space-x-4">
               <a
-                href="#"
+                href="https://www.facebook.com/profile.php?id=100057225738324&locale=lt_LT"
                 className="text-white hover:text-primary transition-colors"
                 aria-label="Facebook"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <Facebook size={20} />
               </a>
               <a
-                href="#"
-                className="text-white hover:text-primary transition-colors"
-                aria-label="Instagram"
-              >
-                <Instagram size={20} />
-              </a>
-              <a
-                href="#"
-                className="text-white hover:text-primary transition-colors"
-                aria-label="YouTube"
-              >
-                <Youtube size={20} />
-              </a>
-              <a
-                href="mailto:info@nibriuzirgynelis.lt"
+                href="#contact"
                 className="text-white hover:text-primary transition-colors"
                 aria-label="Email"
+                onClick={(e) => {
+                  e.preventDefault();
+                  document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+                }}
               >
                 <Mail size={20} />
               </a>
@@ -44,62 +36,62 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="font-heading font-bold text-lg mb-4">Activities</h3>
+            <h3 className="font-heading font-bold text-lg mb-4">Veiklos</h3>
             <ul className="space-y-2">
               <li>
                 <a href="#services" className="text-gray-300 hover:text-primary transition-colors">
-                  Horseback Riding
+                  Jojimas žirgais
                 </a>
               </li>
               <li>
                 <a href="#services" className="text-gray-300 hover:text-primary transition-colors">
-                  Nature Hikes
+                  Pasivaikščiojimai gamtoje
                 </a>
               </li>
               <li>
                 <a href="#services" className="text-gray-300 hover:text-primary transition-colors">
-                  Summer Camps
+                  Vasaros stovyklos
                 </a>
               </li>
               <li>
                 <a href="#services" className="text-gray-300 hover:text-primary transition-colors">
-                  Farm Photoshoots
+                  Fotosesijos ūkyje
                 </a>
               </li>
             </ul>
           </div>
           
           <div>
-            <h3 className="font-heading font-bold text-lg mb-4">Information</h3>
+            <h3 className="font-heading font-bold text-lg mb-4">Informacija</h3>
             <ul className="space-y-2">
               <li>
                 <a href="#about" className="text-gray-300 hover:text-primary transition-colors">
-                  About Us
+                  Apie mus
                 </a>
               </li>
               <li>
                 <a href="#testimonials" className="text-gray-300 hover:text-primary transition-colors">
-                  Testimonials
+                  Atsiliepimai
                 </a>
               </li>
               <li>
                 <a href="#" className="text-gray-300 hover:text-primary transition-colors">
-                  Privacy Policy
+                  Privatumo politika
                 </a>
               </li>
               <li>
                 <a href="#" className="text-gray-300 hover:text-primary transition-colors">
-                  Terms of Service
+                  Naudojimo sąlygos
                 </a>
               </li>
             </ul>
           </div>
           
           <div>
-            <h3 className="font-heading font-bold text-lg mb-4">Contact</h3>
+            <h3 className="font-heading font-bold text-lg mb-4">Kontaktai</h3>
             <address className="not-italic text-gray-300">
-              <p className="mb-2">Nibrių kaimas, Nemunas Loops Regional Park</p>
-              <p className="mb-2">LT-12345, Lithuania</p>
+              <p className="mb-2">Nemuno 10, Prienų r., Nibriai</p>
+              <p className="mb-2">LT-12345, Lietuva</p>
               <p className="mb-2">
                 <a href="tel:+37012345678" className="hover:text-primary transition-colors">
                   +370 12 345 678
@@ -115,18 +107,18 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400 text-sm">
-          <p>© {new Date().getFullYear()} Nibrių žirgynėlis. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Nibrių žirgynėlis. Visos teisės saugomos.</p>
           <div className="mt-2">
             <a href="#" className="text-gray-400 hover:text-primary transition-colors mx-2">
-              Privacy
+              Privatumas
             </a>
             <span>|</span>
             <a href="#" className="text-gray-400 hover:text-primary transition-colors mx-2">
-              Terms
+              Sąlygos
             </a>
             <span>|</span>
             <a href="#" className="text-gray-400 hover:text-primary transition-colors mx-2">
-              Cookies
+              Slapukai
             </a>
           </div>
         </div>

@@ -4,13 +4,13 @@ const SchemaMarkup = () => {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Nibrių žirgynėlis",
-    "description": "Experience horseback riding, scenic hikes, and animal interactions at our family-friendly countryside farm.",
-    "image": "https://images.unsplash.com/photo-1472396961693-142e6e269027?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80",
+    "description": "Patirkite jojimą žirgais, pasivaikščiojimus gamtoje ir bendravimą su gyvūnais mūsų šeimai draugiškame kaimo ūkyje.",
+    "image": "/lovable-uploads/66de89ce-e32e-4b3d-83fb-9f791c886bd5.png",
     "address": {
       "@type": "PostalAddress",
-      "streetAddress": "Nibrių kaimas",
-      "addressLocality": "Nemunas Loops Regional Park",
-      "addressRegion": "Lithuania",
+      "streetAddress": "Nemuno 10",
+      "addressLocality": "Nibriai",
+      "addressRegion": "Prienų r.",
       "postalCode": "LT-12345",
       "addressCountry": "LT"
     },

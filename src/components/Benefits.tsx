@@ -14,38 +14,38 @@ interface Benefit {
 const benefits: Benefit[] = [
   {
     id: "nature",
-    title: "Connect with Nature",
-    description: "Experience the serene beauty of Nemunas Loops Regional Park, with breathtaking views and fresh air.",
+    title: "Susijungimas su gamta",
+    description: "Patirkite ramybę Nemuno kilpų regioniniame parke, su kvapą gniaužiančiais vaizdais ir grynu oru.",
     icon: MapPin,
   },
   {
     id: "family",
-    title: "Family Friendly",
-    description: "Activities designed for all ages with a warm, welcoming environment for families and children.",
+    title: "Draugiškas šeimoms",
+    description: "Veiklos skirtos visoms amžiaus grupėms su šilta, svetinga aplinka šeimoms ir vaikams.",
     icon: Users,
   },
   {
     id: "animals",
-    title: "Animal Interactions",
-    description: "Meet and bond with our friendly horses, dogs, cats, and other farm animals in a safe setting.",
+    title: "Bendravimas su gyvūnais",
+    description: "Susipažinkite ir užmegzkite ryšį su mūsų draugiškais žirgais, šunimis, katėmis ir kitais ūkio gyvūnais saugioje aplinkoje.",
     icon: Book,
   },
   {
     id: "seasonal",
-    title: "Seasonal Activities",
-    description: "Enjoy unique experiences throughout the year, from summer camps to cozy winter rides.",
+    title: "Sezoninės veiklos",
+    description: "Mėgaukitės unikaliomis patirtimis visus metus, nuo vasaros stovyklų iki jaukių žiemos pasivažinėjimų.",
     icon: Calendar,
   },
   {
     id: "photos",
-    title: "Picture Perfect",
-    description: "Stunning natural backdrops for memorable photos and special occasions.",
+    title: "Tobulos nuotraukos",
+    description: "Nuostabūs gamtos fonai prisiminimams ir ypatingoms progoms.",
     icon: Image,
   },
   {
     id: "flexible",
-    title: "Flexible Scheduling",
-    description: "Book individual sessions or group events that fit your schedule and preferences.",
+    title: "Lankstus tvarkaraštis",
+    description: "Užsisakykite individualias sesijas arba grupinius renginius, kurie atitinka jūsų tvarkaraštį ir pageidavimus.",
     icon: Clock,
   },
 ];
@@ -84,7 +84,7 @@ const Benefits = () => {
     >
       <div className="container-width">
         <h2 className="text-h2 text-center mb-8 fade-in-on-scroll">
-          Why Choose Nibrių žirgynėlis?
+          Kodėl rinktis Nibrių žirgynėlį?
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {benefits.map((benefit, index) => (

@@ -44,31 +44,31 @@ const ContactSection = () => {
     const errors: Record<string, string> = {};
     
     if (!formData.name.trim()) {
-      errors.name = "Name is required";
+      errors.name = "Būtina įvesti vardą";
     }
     
     if (!formData.email.trim()) {
-      errors.email = "Email is required";
+      errors.email = "Būtina įvesti el. paštą";
     } else if (!/^\S+@\S+\.\S+$/.test(formData.email)) {
-      errors.email = "Email is invalid";
+      errors.email = "Neteisingas el. pašto formatas";
     }
     
     if (!formData.phone.trim()) {
-      errors.phone = "Phone number is required";
+      errors.phone = "Būtina įvesti telefono numerį";
     }
     
     if (!formData.date.trim()) {
-      errors.date = "Date is required";
+      errors.date = "Būtina pasirinkti datą";
     }
     
     if (!formData.time.trim()) {
-      errors.time = "Time is required";
+      errors.time = "Būtina pasirinkti laiką";
     }
     
     if (!formData.people.trim()) {
-      errors.people = "Number of people is required";
+      errors.people = "Būtina įvesti žmonių skaičių";
     } else if (isNaN(Number(formData.people)) || Number(formData.people) < 1) {
-      errors.people = "Please enter a valid number";
+      errors.people = "Įveskite teisingą skaičių";
     }
     
     setFormErrors(errors);
@@ -88,8 +88,8 @@ const ContactSection = () => {
     setTimeout(() => {
       setLoading(false);
       toast({
-        title: "Booking Submitted!",
-        description: "We will contact you shortly to confirm your visit.",
+        title: "Užklausa išsiųsta!",
+        description: "Netrukus su jumis susisieksime, kad patvirtintume jūsų vizitą.",
       });
       
       // Reset form
@@ -136,18 +136,18 @@ const ContactSection = () => {
     >
       <div className="container-width">
         <h2 className="text-h2 text-center mb-8 fade-in-on-scroll">
-          Book Your Visit Today!
+          Rezervuokite savo apsilankymą šiandien!
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="fade-in-on-scroll">
             <form onSubmit={handleSubmit} className="space-y-4">
               <div>
-                <Label htmlFor="name">Full Name</Label>
+                <Label htmlFor="name">Vardas ir pavardė</Label>
                 <Input
                   id="name"
                   name="name"
-                  placeholder="Enter your full name"
+                  placeholder="Įveskite savo vardą ir pavardę"
                   value={formData.name}
                   onChange={handleChange}
                   className={formErrors.name ? "border-destructive" : ""}
@@ -160,12 +160,12 @@ const ContactSection = () => {
               </div>
 
               <div>
-                <Label htmlFor="email">Email Address</Label>
+                <Label htmlFor="email">El. pašto adresas</Label>
                 <Input
                   id="email"
                   name="email"
                   type="email"
-                  placeholder="Enter your email"
+                  placeholder="Įveskite savo el. paštą"
                   value={formData.email}
                   onChange={handleChange}
                   className={formErrors.email ? "border-destructive" : ""}
@@ -178,11 +178,11 @@ const ContactSection = () => {
               </div>
 
               <div>
-                <Label htmlFor="phone">Phone Number</Label>
+                <Label htmlFor="phone">Telefono numeris</Label>
                 <Input
                   id="phone"
                   name="phone"
-                  placeholder="Enter your phone number"
+                  placeholder="Įveskite savo telefono numerį"
                   value={formData.phone}
                   onChange={handleChange}
                   className={formErrors.phone ? "border-destructive" : ""}
@@ -196,7 +196,7 @@ const ContactSection = () => {
 
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div>
-                  <Label htmlFor="date">Preferred Date</Label>
+                  <Label htmlFor="date">Pageidaujama data</Label>
                   <div className="relative">
                     <Input
                       id="date"
@@ -214,7 +214,7 @@ const ContactSection = () => {
                   </div>
                 </div>
                 <div>
-                  <Label htmlFor="time">Preferred Time</Label>
+                  <Label htmlFor="time">Pageidaujamas laikas</Label>
                   <div className="relative">
                     <Input
                       id="time"
@@ -234,13 +234,13 @@ const ContactSection = () => {
               </div>
 
               <div>
-                <Label htmlFor="people">Number of People</Label>
+                <Label htmlFor="people">Žmonių skaičius</Label>
                 <Input
                   id="people"
                   name="people"
                   type="number"
                   min="1"
-                  placeholder="How many people will join?"
+                  placeholder="Kiek žmonių dalyvaus?"
                   value={formData.people}
                   onChange={handleChange}
                   className={formErrors.people ? "border-destructive" : ""}
@@ -253,11 +253,11 @@ const ContactSection = () => {
               </div>
 
               <div>
-                <Label htmlFor="message">Additional Information (Optional)</Label>
+                <Label htmlFor="message">Papildoma informacija (neprivaloma)</Label>
                 <Textarea
                   id="message"
                   name="message"
-                  placeholder="Tell us any specific requirements or questions"
+                  placeholder="Parašykite mums apie savo specifinius reikalavimus ar klausimus"
                   value={formData.message}
                   onChange={handleChange}
                   className="resize-none h-32"
@@ -267,7 +267,7 @@ const ContactSection = () => {
               <div className="bg-amber-50 p-3 rounded-md border border-amber-200 mb-4">
                 <p className="text-sm text-amber-800 flex items-center">
                   <Calendar className="w-4 h-4 mr-2 flex-shrink-0" />
-                  <span>Group bookings must be made at least 5 days in advance.</span>
+                  <span>Grupiniai užsakymai turi būti atliekami ne mažiau kaip prieš 5 dienas.</span>
                 </p>
               </div>
 
@@ -276,30 +276,30 @@ const ContactSection = () => {
                 className="btn-primary w-full"
                 disabled={loading}
               >
-                {loading ? "Processing..." : "Submit"}
+                {loading ? "Apdorojama..." : "Pateikti"}
               </Button>
             </form>
           </div>
 
           <div className="fade-in-on-scroll" style={{ animationDelay: "0.2s" }}>
             <div className="bg-white p-6 rounded-lg shadow-card h-full">
-              <h3 className="text-h3 mb-6">Contact Information</h3>
+              <h3 className="text-h3 mb-6">Kontaktinė informacija</h3>
               <div className="space-y-4">
                 <div className="flex items-start">
                   <MapPin className="mr-4 text-primary flex-shrink-0" size={24} />
                   <div>
-                    <h4 className="font-semibold mb-1">Location</h4>
+                    <h4 className="font-semibold mb-1">Adresas</h4>
                     <p className="text-[#757575]">
-                      Nibrių kaimas, Nemunas Loops Regional Park<br />
-                      LT-12345, Lithuania
+                      Nemuno 10, Prienų r., Nibriai<br />
+                      LT-12345, Lietuva
                     </p>
                     <a
-                      href="https://goo.gl/maps/examplemap"
+                      href="https://maps.app.goo.gl/yZWFBnFFxXim4tGq7"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="link-text mt-1 inline-block"
                     >
-                      View on map
+                      Rodyti žemėlapyje
                     </a>
                   </div>
                 </div>
@@ -307,7 +307,7 @@ const ContactSection = () => {
                 <div className="flex items-start">
                   <Phone className="mr-4 text-primary flex-shrink-0" size={24} />
                   <div>
-                    <h4 className="font-semibold mb-1">Phone</h4>
+                    <h4 className="font-semibold mb-1">Telefonas</h4>
                     <a
                       href="tel:+37012345678"
                       className="text-[#757575] hover:text-primary transition-colors"
@@ -320,10 +320,10 @@ const ContactSection = () => {
                 <div className="flex items-start">
                   <Clock className="mr-4 text-primary flex-shrink-0" size={24} />
                   <div>
-                    <h4 className="font-semibold mb-1">Working Hours</h4>
+                    <h4 className="font-semibold mb-1">Darbo valandos</h4>
                     <p className="text-[#757575]">
-                      Monday - Friday: 9:00 AM - 6:00 PM<br />
-                      Saturday - Sunday: 10:00 AM - 4:00 PM
+                      Pirmadienis - Penktadienis: 9:00 - 18:00<br />
+                      Šeštadienis - Sekmadienis: 10:00 - 16:00
                     </p>
                   </div>
                 </div>
@@ -331,9 +331,9 @@ const ContactSection = () => {
                 <div className="flex items-start">
                   <Calendar className="mr-4 text-primary flex-shrink-0" size={24} />
                   <div>
-                    <h4 className="font-semibold mb-1">Booking Information</h4>
+                    <h4 className="font-semibold mb-1">Užsakymo informacija</h4>
                     <p className="text-[#757575]">
-                      We recommend booking at least 3 days in advance. Group bookings should be made at least 5 days in advance.
+                      Rekomenduojame užsisakyti ne mažiau kaip prieš 3 dienas. Grupiniai užsakymai turėtų būti atliekami ne mažiau kaip prieš 5 dienas.
                     </p>
                   </div>
                 </div>

@@ -34,7 +34,7 @@ const Hero = () => {
             animationDelay: "0s",
           }}
         >
-          Experience the Magic of Nibrių žirgynėlis
+          Patirkite Nibrių žirgynėlio magiją
         </h1>
         <h2
           className={`text-h3 text-white/90 max-w-[900px] mx-auto mb-12 sm:text-xl ${
@@ -44,7 +44,7 @@ const Hero = () => {
             animationDelay: "0.2s",
           }}
         >
-          Connect with nature and animals in a family-friendly countryside escape.
+          Susisiekite su gamta ir gyvūnais šeimoms draugiškoje kaimo aplinkoje.
         </h2>
         <Button
           className={`btn-primary text-lg shadow-lg ${
@@ -55,7 +55,7 @@ const Hero = () => {
           }}
           onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
         >
-          Book Your Adventure
+          Užsisakyti nuotykį
         </Button>
       </div>
     </section>
