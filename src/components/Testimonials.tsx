@@ -16,7 +16,7 @@ const testimonials: Testimonial[] = [
     quote: "Mūsų šeima patyrė nuostabiausią potyrį Nibrių žirgynėlyje. Žirgai buvo švelnūs, personalas nepaprastai draugiškas, o kraštovaizdis kvapą gniaužiantis!",
     author: "Laura Jonaitytė",
     role: "Šeimos lankytoja",
-    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80",
+    image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80",
   },
   {
     id: "testimonial2",
