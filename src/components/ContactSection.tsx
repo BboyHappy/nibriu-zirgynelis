@@ -1,11 +1,10 @@
-
 import { useState, useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
-import { Calendar, Clock, Users, Phone } from "lucide-react";
+import { Calendar, Clock, Users, Phone, MapPin } from "lucide-react";
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({

@@ -2,12 +2,13 @@
 import { useEffect, useRef } from "react";
 import { Calendar, MapPin, Clock, Users, Image, Book } from "lucide-react";
 import { Card } from "@/components/ui/card";
+import { LucideProps } from "lucide-react";
 
 interface Benefit {
   id: string;
   title: string;
   description: string;
-  icon: React.ComponentType<{ className?: string; size?: number }>;
+  icon: React.ComponentType<LucideProps>;
 }
 
 const benefits: Benefit[] = [
