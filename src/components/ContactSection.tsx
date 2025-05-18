@@ -1,3 +1,4 @@
+
 import { useState, useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -263,6 +264,13 @@ const ContactSection = () => {
                 />
               </div>
 
+              <div className="bg-amber-50 p-3 rounded-md border border-amber-200 mb-4">
+                <p className="text-sm text-amber-800 flex items-center">
+                  <Calendar className="w-4 h-4 mr-2 flex-shrink-0" />
+                  <span>Group bookings must be made at least 5 days in advance.</span>
+                </p>
+              </div>
+
               <Button
                 type="submit"
                 className="btn-primary w-full"
@@ -325,7 +333,7 @@ const ContactSection = () => {
                   <div>
                     <h4 className="font-semibold mb-1">Booking Information</h4>
                     <p className="text-[#757575]">
-                      We recommend booking at least 3 days in advance. Group bookings should be made at least 2 weeks in advance.
+                      We recommend booking at least 3 days in advance. Group bookings should be made at least 5 days in advance.
                     </p>
                   </div>
                 </div>

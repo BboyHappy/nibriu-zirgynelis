@@ -19,7 +19,7 @@ const Hero = () => {
       className="relative min-h-[600px] w-full flex items-center justify-center pt-[80px] pb-[80px] px-[32px] md:pt-[60px] md:pb-[60px] md:px-[24px] sm:px-[16px] overflow-hidden"
       style={{
         backgroundImage:
-          "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1472396961693-142e6e269027?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80')",
+          "linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/lovable-uploads/66de89ce-e32e-4b3d-83fb-9f791c886bd5.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
