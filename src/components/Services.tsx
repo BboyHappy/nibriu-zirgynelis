@@ -22,14 +22,14 @@ const services: Service[] = [
   },
   {
     id: "nature-hikes",
-    title: "Pasivaikščiojimai gamtoje",
+    title: "Žygiai gamtoje",
     description: "Tyrinėkite nuostabų Nemuno kilpų regioninį parką jodinėdami arba su mūsų draugiškais ūkio šunimis.",
     price: "Nuo 35 € už asmenį",
     image: "/lovable-uploads/a8c23731-eb95-4e42-91db-2a210137ade6.png",
   },
   {
     id: "summer-camps",
-    title: "Vaikų vasaros stovyklos",
+    title: "Vaikų stovyklos",
     description: "Savaitės trukmės nuotykiai, kurių metu vaikai bendrauja su gyvūnais, mokosi apie gamtą ir kuria ilgalaikius prisiminimus.",
     price: "Nuo 200 € už savaitę",
     image: "/lovable-uploads/0d531560-b853-4d0e-aaf2-6b7286ab1632.png",
@@ -70,6 +70,10 @@ const Services = () => {
     };
   }, []);
 
+  const handleLearnMoreClick = () => {
+    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section
       id="services"
@@ -103,7 +107,7 @@ const Services = () => {
                   <span className="text-sm font-semibold text-primary">
                     {service.price}
                   </span>
-                  <Button className="btn-secondary">Sužinoti daugiau</Button>
+                  <Button className="btn-secondary" onClick={handleLearnMoreClick}>Sužinoti daugiau</Button>
                 </div>
               </div>
             </Card>

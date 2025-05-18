@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Facebook } from "lucide-react";
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -27,11 +27,11 @@ const Header = () => {
   };
 
   const navItems = [
-    { name: "Home", href: "#" },
-    { name: "Activities", href: "#services" },
-    { name: "About Us", href: "#about" },
-    { name: "Testimonials", href: "#testimonials" },
-    { name: "Contact", href: "#contact" },
+    { name: "Pagrindinis", href: "#" },
+    { name: "Veiklos", href: "#services" },
+    { name: "Apie mus", href: "#about" },
+    { name: "Atsiliepimai", href: "#testimonials" },
+    { name: "Kontaktai", href: "#contact" },
   ];
 
   return (
@@ -58,6 +58,15 @@ const Header = () => {
               {item.name}
             </a>
           ))}
+          <a
+            href="https://www.facebook.com/profile.php?id=100057225738324&locale=lt_LT"
+            className="text-[#212121] hover:text-primary transition-colors duration-300"
+            aria-label="Facebook"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Facebook size={20} />
+          </a>
         </nav>
 
         <div className="hidden md:block">
@@ -65,7 +74,7 @@ const Header = () => {
             className="btn-primary"
             onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
           >
-            Book a Visit
+            Rezervacija
           </Button>
         </div>
 
@@ -96,6 +105,15 @@ const Header = () => {
                   {item.name}
                 </a>
               ))}
+              <a
+                href="https://www.facebook.com/profile.php?id=100057225738324&locale=lt_LT"
+                className="font-body text-lg py-4 text-[#212121] hover:text-primary transition-colors duration-300"
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                <Facebook size={20} className="inline mr-2" /> Facebook
+              </a>
               <Button
                 className="btn-primary mt-4 w-full"
                 onClick={() => {
@@ -103,7 +121,7 @@ const Header = () => {
                   setMobileMenuOpen(false);
                 }}
               >
-                Book a Visit
+                Rezervacija
               </Button>
             </nav>
           </div>

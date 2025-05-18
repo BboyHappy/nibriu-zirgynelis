@@ -44,7 +44,7 @@ const Hero = () => {
             animationDelay: "0.2s",
           }}
         >
-          Susisiekite su gamta ir gyvūnais šeimoms draugiškoje kaimo aplinkoje.
+          Pamatykite įspūdingą gamtą ir gyvūnus, šeimoms draugiškoje kaimo aplinkoje.
         </h2>
         <Button
           className={`btn-primary text-lg shadow-lg ${

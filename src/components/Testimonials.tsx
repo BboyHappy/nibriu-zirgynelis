@@ -13,7 +13,7 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     id: "testimonial1",
-    quote: "Mūsų šeima patyrė nuostabiausią potyri Nibrių žirgynėlyje. Žirgai buvo švelnūs, personalas nepaprastai draugiškas, o kraštovaizdis kvapą gniaužiantis!",
+    quote: "Mūsų šeima patyrė nuostabiausią potyrį Nibrių žirgynėlyje. Žirgai buvo švelnūs, personalas nepaprastai draugiškas, o kraštovaizdis kvapą gniaužiantis!",
     author: "Laura Jonaitytė",
     role: "Šeimos lankytoja",
     image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-1.2.1&auto=format&fit=crop&w=100&q=80",
@@ -102,7 +102,7 @@ const Testimonials = () => {
           <div>
             <h3 className="text-h3 mb-4">Mūsų istorija</h3>
             <p className="text-body mb-4">
-              Įkurtas 2010 m. šeimos, aistringos žirgams ir gamtai, 
+              Įkurtas 2018 m. šeimos, jaučiančios aistrą žirgams ir gamtai, 
               Nibrių žirgynėlis išaugo į mylimą vietą lankytojams, 
               ieškantiems autentiškų kaimo patirčių. Esame Nemuno kilpų 
               regioninio parko širdyje, kur mūsų ūkis derina tradicinį 
@@ -125,9 +125,6 @@ const Testimonials = () => {
               </li>
               <li className="text-body">
                 Žirgai atrinkti ir apmokyti dėl jų švelnaus temperamento
-              </li>
-              <li className="text-body">
-                Pirmosios pagalbos mokantys darbuotojai visada dalyvauja
               </li>
               <li className="text-body">
                 Orams pritaikytas veiklų planavimas ir pritaikymas

@@ -291,7 +291,7 @@ const ContactSection = () => {
                     <h4 className="font-semibold mb-1">Adresas</h4>
                     <p className="text-[#757575]">
                       Nemuno 10, Prienų r., Nibriai<br />
-                      LT-12345, Lietuva
+                      Lietuva
                     </p>
                     <a
                       href="https://maps.app.goo.gl/yZWFBnFFxXim4tGq7"
@@ -322,8 +322,7 @@ const ContactSection = () => {
                   <div>
                     <h4 className="font-semibold mb-1">Darbo valandos</h4>
                     <p className="text-[#757575]">
-                      Pirmadienis - Penktadienis: 9:00 - 18:00<br />
-                      Šeštadienis - Sekmadienis: 10:00 - 16:00
+                      Svečių laukiame visomis darbo dienomis.
                     </p>
                   </div>
                 </div>

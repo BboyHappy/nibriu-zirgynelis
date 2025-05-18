@@ -14,13 +14,13 @@ interface Benefit {
 const benefits: Benefit[] = [
   {
     id: "nature",
-    title: "Susijungimas su gamta",
+    title: "Pajauskite gamtą",
     description: "Patirkite ramybę Nemuno kilpų regioniniame parke, su kvapą gniaužiančiais vaizdais ir grynu oru.",
     icon: MapPin,
   },
   {
     id: "family",
-    title: "Draugiškas šeimoms",
+    title: "Tinka visiems",
     description: "Veiklos skirtos visoms amžiaus grupėms su šilta, svetinga aplinka šeimoms ir vaikams.",
     icon: Users,
   },
@@ -33,7 +33,7 @@ const benefits: Benefit[] = [
   {
     id: "seasonal",
     title: "Sezoninės veiklos",
-    description: "Mėgaukitės unikaliomis patirtimis visus metus, nuo vasaros stovyklų iki jaukių žiemos pasivažinėjimų.",
+    description: "Mėgaukitės unikaliomis patirtimis visus metus, nuo maudymosi su žirgais iki plaukiojimo Nemune su irklentėmis.",
     icon: Calendar,
   },
   {

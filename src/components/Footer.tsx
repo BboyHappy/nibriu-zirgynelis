@@ -9,7 +9,7 @@ const Footer = () => {
           <div>
             <h3 className="font-heading font-bold text-xl mb-4">Nibrių žirgynėlis</h3>
             <p className="text-gray-300 mb-4">
-              Susisiekite su gamta ir gyvūnais mūsų šeimai draugiškoje kaimo aplinkoje.
+              Pamatykite įspūdingą gamtą ir gyvūnus, šeimoms draugiškoje kaimo aplinkoje.
             </p>
             <div className="flex space-x-4">
               <a
@@ -45,12 +45,12 @@ const Footer = () => {
               </li>
               <li>
                 <a href="#services" className="text-gray-300 hover:text-primary transition-colors">
-                  Pasivaikščiojimai gamtoje
+                  Žygiai gamtoje
                 </a>
               </li>
               <li>
                 <a href="#services" className="text-gray-300 hover:text-primary transition-colors">
-                  Vasaros stovyklos
+                  Vaikų stovyklos
                 </a>
               </li>
               <li>
@@ -91,7 +91,7 @@ const Footer = () => {
             <h3 className="font-heading font-bold text-lg mb-4">Kontaktai</h3>
             <address className="not-italic text-gray-300">
               <p className="mb-2">Nemuno 10, Prienų r., Nibriai</p>
-              <p className="mb-2">LT-12345, Lietuva</p>
+              <p className="mb-2">Lietuva</p>
               <p className="mb-2">
                 <a href="tel:+37012345678" className="hover:text-primary transition-colors">
                   +370 12 345 678
