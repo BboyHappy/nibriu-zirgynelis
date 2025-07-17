@@ -214,15 +214,17 @@ const ContactSection = () => {
                   </div>
                 </div>
                 <div>
-                  <Label htmlFor="time">Pageidaujamas laikas</Label>
+                  <Label htmlFor="time">Pageidaujamas laikas (24h formatas)</Label>
                   <div className="relative">
                     <Input
                       id="time"
                       name="time"
                       type="time"
+                      step="3600"
                       value={formData.time}
                       onChange={handleChange}
                       className={formErrors.time ? "border-destructive" : ""}
+                      placeholder="09:00"
                     />
                     {formErrors.time && (
                       <span className="text-xs text-destructive">
